@@ -20,3 +20,23 @@
 .App-link {
   color: #09d3ac;
 }
+progress::-moz-progress-bar {
+  background: linear-gradient(
+    150deg,
+    rgba(41, 182, 246, 1),
+    rgba(41, 182, 246, 1) 40%,
+    rgba(255, 255, 255, 1)
+  );
+}
+progress::-webkit-progress-bar {
+  background: #212121;
+  border: 1px solid grey;
+}
+progress::-webkit-progress-value {
+  background: linear-gradient(
+    150deg,
+    rgba(41, 182, 246, 1),
+    rgba(41, 182, 246, 1) 40%,
+    rgba(255, 255, 255, 1)
+  );
+}

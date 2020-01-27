@@ -1,0 +1,230 @@
+.button {
+  display: block;
+  margin: 20px;
+  margin-left: 15px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  text-align: start;
+  color: white;
+}
+
+.returnButton {
+  display: block;
+  margin: 20px;
+  margin-left: 15px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  text-align: start;
+  color: white;
+}
+
+.activeButton {
+  color: white;
+  font-size: 20px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+.desactiveButton {
+  color: transparent;
+  font-size: 20px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+
+.testactiveButton {
+  color: white;
+  font-size: 20px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  right: 50px;
+  width: auto;
+  height: auto;
+}
+
+#Experience.testactiveButton {
+  animation-name: reductionButtonExperience;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes reductionButtonExperience {
+  from {
+    bottom: -145px;
+    animation-timing-function: ease-out;
+  }
+  to {
+    bottom: 145px;
+    animation-timing-function: ease-out;
+  }
+}
+
+#Skill.testactiveButton {
+  animation-name: reductionButtonSkill;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes reductionButtonSkill {
+  from {
+    bottom: -45px;
+    animation-timing-function: ease-out;
+  }
+  to {
+    bottom: 45px;
+    animation-timing-function: ease-out;
+  }
+}
+#Formation.testactiveButton {
+  animation-name: reductionButtonFormation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes reductionButtonFormation {
+  from {
+    bottom: -90px;
+    animation-timing-function: ease-out;
+  }
+  to {
+    bottom: 90px;
+    animation-timing-function: ease-out;
+  }
+}
+#Project.testactiveButton {
+  animation-name: reductionButtonProject;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes reductionButtonProject {
+  from {
+    bottom: -190px;
+    animation-timing-function: ease-out;
+  }
+  to {
+    bottom: 190px;
+    animation-timing-function: ease-out;
+  }
+}
+#Contact.testactiveButton {
+  animation-name: reductionButtonContact;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes reductionButtonContact {
+  from {
+    bottom: -240px;
+    animation-timing-function: ease-out;
+  }
+  to {
+    bottom: 240px;
+    animation-timing-function: ease-out;
+  }
+}
+
+.button:hover {
+  background-color: rgba(41, 182, 246, 0.3);
+
+  color: chartreuse;
+}
+/* .dispear {
+  color: rgba(101, 115, 208, 0);
+  border: none;
+  background-color: transparent;
+  animation-name: dispear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes dispear {
+  0% {
+    font-size: 20px;
+  }
+  50% {
+    font-size: 0px;
+  }
+  100% {
+    font-size: 0px;
+  }
+} */
+
+.commandMenu {
+  border: 1px solid rgba(41, 182, 246, 1);
+  display: flex;
+  margin-right: 100px;
+  height: 60vh;
+  margin-top: 80px;
+  padding-bottom: 70px;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 200px;
+
+  background: linear-gradient(
+    to left,
+    rgba(12, 11, 27, 0.75),
+    rgba(33, 33, 33, 0.75) 75%,
+    90%,
+    rgba(101, 115, 208, 0.75)
+  );
+  animation-name: augmentation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes augmentation {
+  from {
+    height: 1vh;
+    width: 250px;
+  }
+  to {
+    height: 60vh;
+    width: 200px;
+  }
+}
+
+.test {
+  border: 1px solid rgba(41, 182, 246, 1);
+  display: flex;
+  margin-right: 100px;
+  height: 60vh;
+  margin-top: 80px;
+  padding-bottom: 70px;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  min-width: 200px;
+
+  background: linear-gradient(
+    to left,
+    rgba(12, 11, 27, 0.75),
+    rgba(33, 33, 33, 0.75) 75%,
+    90%,
+    rgba(101, 115, 208, 0.75)
+  );
+  animation-name: reduction;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes reduction {
+  from {
+    height: 60vh;
+    width: 200px;
+    animation-timing-function: ease-out;
+  }
+  to {
+    height: 1vh;
+    width: 250px;
+    animation-timing-function: ease-out;
+  }
+}
